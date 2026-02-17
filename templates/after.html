@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='after.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Prediction Result</h1>
+        <h2>ML-Based Revenue Forecast</h2>
+
+        <!-- Result Card -->
+        <div class="result-card">
+            <span class="result-label">Predicted Revenue</span>
+            <div class="result-value">₹ {{ prediction }}</div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            <h3>Input Summary</h3>
+
+            <div class="summary-grid">
+                <div><strong>Product:</strong> {{ pn }}</div>
+                <div><strong>Category:</strong> {{ pc }}</div>
+                <div><strong>Quantity:</strong> {{ q }}</div>
+                <div><strong>Price:</strong> {{ p }}</div>
+                <div><strong>Discount:</strong> {{ d }}</div>
+                <div><strong>City:</strong> {{ City }}</div>
+                <div><strong>Month:</strong> {{ MM }}</div>
+            </div>
+        </div>
+
+        <!-- Action -->
+        <a href="/" class="back-btn">Predict Again</a>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 🔵⚪ Blue + Gray animated background */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        -45deg,
+        #f1f5f9,   /* light gray */
+        #e5e7eb,   /* gray */
+        #dbeafe,   /* light blue */
+        #eff6ff    /* very light blue */
+    );
+    background-size: 400% 400%;
+    animation: bgShift 20s ease infinite;
+    color: #0f172a;
+}
+
+/* Background animation */
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main container */
+.container {
+    max-width: 760px;
+    margin: 70px auto;
+    background-color: #ffffff;
+    padding: 48px 52px;
+    border-radius: 12px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+/* Main title */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+        color: #16a34a; /* green */
+
+}
+
+
+/* ✅ h2 in green */
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #16a34a; /* green */
+    margin-bottom: 16px;
+}
+
+/* 🔠 Bigger paragraph text */
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #010406;
+    margin-bottom: 36px;
+}
+
+/* Form layout */
+.form-row {
+    display: grid;
+    grid-template-columns: 1.1fr 2.4fr;
+    gap: 22px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Inputs */
+input[type="text"] {
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+button {
+    margin-top: 34px;
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.28);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 36px 28px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}

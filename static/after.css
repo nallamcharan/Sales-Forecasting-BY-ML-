@@ -1,0 +1,65 @@
+/* Result card */
+.result-card {
+    margin: 32px 0;
+    padding: 28px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result-label {
+    font-size: 14px;
+    color: #64748b;
+    letter-spacing: 0.5px;
+}
+
+.result-value {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* Summary */
+.summary {
+    margin-top: 36px;
+}
+
+.summary h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #0f172a;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    font-size: 14px;
+    color: #334155;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 26px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}

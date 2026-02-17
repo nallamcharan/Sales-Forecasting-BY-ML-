@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecating/prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="text-align: center;">
+    <div>
+    <h1 style="text-align: center ;">Sales Prediction:</h1>
+      <p>Enter product details to estimate future sales -</p>
+</div>
+    <form  action="{{ url_for('forecast') }}" style="text-align: center;" method="post">
+        <label >Product Name    :</label>
+        <input type="text" name ='pn' placeholder="laptop">
+        <br><br>
+        <label >Product Category:</label>
+        <input type="text" name ='pc' placeholder="Technology">
+        <br><br>
+        
+        <label>Quantity        :</label>
+        <input type="text" name ='q' placeholder="3">
+        <br><br>
+        <label >Product Price :</label>
+        <input type="text" name ='p' placeholder="40000">
+        <br><br>
+        <label>Discount       :</label>
+        <input type="text" name ='d' placeholder="0.02">
+        <br><br>
+        
+        <label >Month         :</label>
+        <input type="text" name ="MM" placeholder="3">
+        <br><br>
+        <label>City         :</label>
+        <input type="text" name ='City' placeholder="North Wesleyland">
+        <br><br>
+        <input type="submit" value="SUBMIT" style=" border-radius: 6px;">
+        <br><br>
+    </form>
+</body>
+</html>
