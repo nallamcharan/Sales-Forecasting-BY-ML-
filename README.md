@@ -7,6 +7,7 @@ Building a sales forcasting system
 ➡️ Developed sales prediction model by machine learning "PIPE LINE"  from scrath with help of "xgboost regression model" it produced (MAPE ERROR 9% Means Model Strong) by using 30k sales records(2023-2025) but i developed this  model without pipeline,it couldn't generate good. results.then I chose ml pipeline model ..
 
 ▶️Tools I used 
+
 1➡️Data manipulation(python,numpy,pandas)
 
 2➡️ Machine learning (sklearn/scikit-learn)
@@ -14,6 +15,7 @@ Building a sales forcasting system
 3➡️ visualization(matplotlib, seaborn)
 
 4➡️ Deployment(Flask)
+
 
 ➡️Here are the steps i followed to develop this model...
 
@@ -30,16 +32,18 @@ Building a sales forcasting system
    3.3➡️Outliers Handling
     
    3.4➡️ Inserting time series columns to data frame 
+   
 
 4️⃣ Exploratory Data Analysis 
 
-   ➡️heatmap() for correlations 
+   4.1➡️heatmap() for correlations 
      
-   ➡️lineplot() for month vs sales relation
+   4.2➡️lineplot() for month vs sales relation
      
-   ➡️boxplot() for outliers 
+   4.3➡️boxplot() for outliers 
      
-   ➡️barplot() for two variate  categorical visualization 
+   4.4➡️barplot() for two variate  categorical visualization 
+
 
 5️⃣Feature Engineering 
     
@@ -61,6 +65,7 @@ Building a sales forcasting system
 9️⃣Model Evaluation (MAE,MSE,MAPE,R2score)
 
 🔟 Deployment by flask .
+
  
 ▶️Eventually this is model performance 
 
@@ -73,7 +78,7 @@ Building a sales forcasting system
    ▶️mean_absolute_percentage_error(0.092)
 
 
-Impact of this model 
+Impact of this model on business
 
 -Busienss revenue can increase 
 
