@@ -1,5 +1,5 @@
 # 🔐 Problem statement :
-Produc tbased Companies want to predict future their  sales to increase their revenue and company growth. 
+Produc based Companies want to predict  their future  sales to increase their revenue and company growth but they can not predict future sales in human thinking way.To solve this problem we need to develop a sales forecastor. 
 
 # 🎯Objective 
 ➡️ Build a sales foresting system  by using machine learing.
