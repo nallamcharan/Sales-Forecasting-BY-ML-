@@ -1,12 +1,19 @@
-#Problem statement 
-Companies want to predict future sales to increase their revenue and company growth 
+#🔐 Problem statement 
+Produc tbased Companies want to predict future their  sales to increase their revenue and company growth. 
 
-🎯Objective 
-Building a sales forcasting system 
- 
-➡️ Developed sales prediction model by machine learning "PIPE LINE"  from scrath with help of "xgboost regression model" it produced (MAPE ERROR 9% Means Model Strong) by using 30k sales records(2023-2025) but i developed this  model without pipeline,it couldn't generate good. results.then I chose ml pipeline model ..
+# 🎯 Objective 
+➡️ Build a sales foresting system  by using machine learing.
+➡️ Deploy it by flask and create web app
 
-▶️Tools I used 
+# Description 
+➡️ Developed  sales prediction model by machine learning "PIPE LINE"  from scratch with help of "xgboost regression model" it produced (MAPE ERROR 9% Means Model Strong) by using 30k sales records(2023-2025) but i developed this  model without pipeline,it couldn't generate good. results.then I chose ml pipeline model ..
+
+# DEMO OF SYSTEM
+![sales_forecaterwebapp](https://github.com/user-attachments/assets/5f522b35-04a2-47da-a006-f1fd86f4b57f)
+![predictedsales](https://github.com/user-attachments/assets/538c2c7a-44f6-4cd6-937b-20e8544595fb)
+
+
+ # ⚙️ Tech Stack
 
 1➡️Data manipulation(python,numpy,pandas)
 
@@ -16,14 +23,18 @@ Building a sales forcasting system
 
 4➡️ Deployment(Flask)
 
+# Approach 
+ ➡️Here are the steps i followed to develop this model...
 
-➡️Here are the steps i followed to develop this model...
+#1️⃣ Importing required libraries 
 
-1️⃣ Importing required libraries 
+# 2️⃣Data collection and good inspection about data
 
-2️⃣Data collection and good inspection about data
+   pd.read_csv() 
 
-3️⃣Data preprocessing 
+   data.info(), data.head(),data.describe()
+
+# 3️⃣Data preprocessing 
 
    3.1➡️Handling missing values 
     
@@ -34,7 +45,7 @@ Building a sales forcasting system
    3.4➡️ Inserting time series columns to data frame 
    
 
-4️⃣ Exploratory Data Analysis 
+# 4️⃣ Exploratory Data Analysis 
 
    4.1➡️heatmap() for correlations 
      
@@ -45,7 +56,7 @@ Building a sales forcasting system
    4.4➡️barplot() for two variate  categorical visualization 
 
 
-5️⃣Feature Engineering 
+# 5️⃣ Feature Engineering 
     
    5.1➡️Feature and Target selection 
     
@@ -56,16 +67,19 @@ Building a sales forcasting system
    5.4 ➡️ Feature   Scaling(StandardScaler())
 
   
-6️⃣Model Selection (XGBRegressor)
+# 6️⃣ Modeling
+  Model Selection (XGBRegressor)
+  
+  Model Training(.fit())
 
-7️⃣Model Training(.fit())
+  Sales Prediction (.predict()
 
-8️⃣Sales Prediction (.predict()
+# 9️⃣ Model Evaluation (MAE,MSE,MAPE,R2score)
+  Developing model is 20% but making it to generate accurate is real skill of the data scientist.
 
-9️⃣Model Evaluation (MAE,MSE,MAPE,R2score)
-
-🔟 Deployment by flask .
-
+# 🔟 Deployment by flask .
+  Eventually developed app by builing HTML  web pages , CSS design 
+  Connected them using falsk function()
  
 ▶️Eventually this is model performance 
 
@@ -78,7 +92,7 @@ Building a sales forcasting system
    ▶️mean_absolute_percentage_error(0.092)
 
 
-Impact of this model on business
+# Impact of this model on business : 
 
 -Busienss revenue can increase 
 
