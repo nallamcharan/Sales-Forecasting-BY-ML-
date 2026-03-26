@@ -1,7 +1,7 @@
-#🔐 Problem statement 
+# 🔐 Problem statement :
 Produc tbased Companies want to predict future their  sales to increase their revenue and company growth. 
 
-# 🎯 Objective 
+# 🎯Objective 
 ➡️ Build a sales foresting system  by using machine learing.
 ➡️ Deploy it by flask and create web app
 
